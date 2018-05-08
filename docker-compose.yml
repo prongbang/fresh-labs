@@ -1,0 +1,9 @@
+version: '3.5'
+services: 
+  fresh-labs:
+    build: .
+    ports: 
+      - "1323:1323"
+    volumes: 
+      - ".:/go/src/fresh-labs"
+    restart: "always"
